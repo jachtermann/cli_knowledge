@@ -81,7 +81,7 @@ Create a resource group `example-group`:
 
 ## ibmcloud resource group-update
 
-Update an existing resource group
+Update an existing resource group:
 
 `ibmcloud resource group-update NAME [-n, --name NEW_NAME] [-f, --force]`
 
@@ -107,7 +107,7 @@ Rename resource group `example-group` to `trial-group`:
 
 ## ibmcloud resource group-delete
 
-Delete an existing resource group
+Delete an existing resource group:
 
 `ibmcloud resource group-delete NAME [-f, --force]`
 
@@ -131,7 +131,7 @@ Delete resource group `example-group`:
 
 ## ibmcloud resource quotas
 
-List all quota definitions.
+List all quota definitions:
 
 `ibmcloud resource quotas`
 
@@ -145,7 +145,7 @@ List all quota definitions:
 
 ## ibmcloud resource quota
 
-Show details of a quota definition.
+Show details of a quota definition:
 
 `ibmcloud resource quota NAME`
 
@@ -166,7 +166,7 @@ Show details of quota `free`:
 
 ## ibmcloud resource service-instances
 
-List service instances.
+List service instances:
 
 `ibmcloud resource service-instances [--service-name SERVICE_NAME] [--location LOCATION] [--type INSTANCE_TYPE] [-g RESOURCE_GROUP | --all-resource-groups] [--long] [--limit LIMIT] [--offset OFFSET] [--output FORMAT] [-q, --quiet]`
 
@@ -211,14 +211,14 @@ List service instances of service `test-service`:
 `ibmcloud resource service-instances --service-name test-service`
 
 
-List next page of service instances with page size of 10
+List next page of service instances with page size of 10:
 
 `ibmcloud resource service-instances --offset 1 --limit 10`
 
 
 ## ibmcloud resource service-instance
 
-Show details of a service instance.
+Show details of a service instance:
 
 `ibmcloud resource service-instance (NAME|ID) [--location LOCATION] [--id]`
 
@@ -296,7 +296,7 @@ Create a service instance that is named `my-service-instance`, that uses service
 
 ## ibmcloud resource service-instance-update
 
-Update service instance.
+Update service instance:
 
 `ibmcloud resource service-instance-update ( NAME | ID ) [-n, --name NEW_NAME] [--service-plan-id SERVICE_PLAN_ID] [-p, --parameters @JSON_FILE | JSON_STRING ] [-g RESOURCE_GROUP] [--service-endpoints SERVICE_ENDPOINTS_TYPE] [-f, --force]`
 
@@ -338,7 +338,7 @@ Update service instance `my-service-instance`, change its name to `new-service-i
 
 ## ibmcloud resource service-instance-delete
 
-Delete service instance. If provisioning is in progress, the command attempts to cancel the provisioning process. Some services might not support cancellation.
+Delete service instance. If provisioning is in progress, the command attempts to cancel the provisioning process. Some services might not support cancellation:
 
 `ibmcloud resource service-instance-delete (NAME|ID) [-f, --force] [--recursive]`
 
@@ -368,7 +368,7 @@ Delete resource service-instance `my-service-instance`:
 
 ## ibmcloud resource service-instance-lock
 
-Lock service instance.
+Lock service instance:
 
 `ibmcloud resource service-instance-lock ( NAME | ID ) [-g RESOURCE_GROUP] [-f, --force]`
 
@@ -398,7 +398,7 @@ Lock resource service-instance `my-service-instance`:
 
 ## ibmcloud resource service-instance-unlock
 
-Unlock service instance.
+Unlock service instance:
 
 `ibmcloud resource service-instance-unlock ( NAME | ID ) [-g RESOURCE_GROUP] [-f, --force]`
 
@@ -428,7 +428,7 @@ Unlock resource service-instance `my-service-instance`:
 
 ## ibmcloud resource service-keys
 
-List service keys of service instance.
+List service keys of service instance:
 
 `ibmcloud resource service-keys [ --instance-id ID | --instance-name NAME ]`
 
@@ -451,7 +451,7 @@ List service keys of service instance `my-service-instance`:
 
 ## ibmcloud resource service-key
 
-Displays the details of any number of service keys, where the first *n* characters of the service key name matches the supplied KEY_NAME.
+Displays the details of any number of service keys, where the first *n* characters of the service key name matches the supplied KEY_NAME:
 
 `ibmcloud resource service-key (NAME | ID) [-g RESOURCE_GROUP] [--id]`
 
@@ -488,7 +488,7 @@ Show details of service key with ID `crn:v1:bluemix:public:cloudantnosqldb:us-so
 
 ## ibmcloud resource service-key-create
 
-Create a service key.
+Create a service key:
 
 `ibmcloud resource service-key-create NAME [ROLE_NAME] ( --instance-id SERVICE_INSTANCE_ID | --instance-name SERVICE_INSTANCE_NAME) [--service-id SERVICE_ID] [-p, --parameters @JSON_FILE | JSON_TEXT] [-g RESOURCE_GROUP] [--service-endpoint SERVICE_ENDPOINT_TYPE] [-f, --force] [-f, --force] [-q, --quiet]`
 
@@ -544,7 +544,7 @@ Create a service key named `my-service-key` without any role for a non-iam-enabl
 
 ## ibmcloud resource service-key-update
 
-Update a service key.
+Update a service key:
 
 `ibmcloud resource service-key-update ( NAME | ID ) [-n, --name NEW_NAME] [-g RESOURCE_GROUP] [-f, --force]`
 
@@ -574,7 +574,7 @@ Update a service key named `my-service-key`, give it a new name `my-service-key-
 
 ## ibmcloud resource service-key-delete
 
-Delete a service key.
+Delete a service key:
 
 `ibmcloud resource service-key-delete ( KEY_NAME | KEY_ID ) [-f, --force]`
 
@@ -598,7 +598,7 @@ Delete service key `my-service-key`:
 
 ## ibmcloud resource search
 
-Search resources by using Lucene query syntax.
+Search resources by using Lucene query syntax:
 
 `ibmcloud resource search LUCENE_QUERY [-o, --offset OFFSET] [-l, --limit LIMIT] [-s, --sort-by (name, family, region, type, crn)] [-p, --provider PROVIDER] [-ir, --is-reclaimed (false, true, any)] [--output FORMAT]`
 
@@ -688,7 +688,7 @@ Search for Classic Infrastructure Hardware resource with the specified tag name 
 
 ## ibmcloud resource tags
 
-List all tags in your billing account
+List all tags in your billing account:
 
 
 `ibmcloud resource tags [-o, --offset OFFSET] [-l, --limit LIMIT]  [-p, --provider classic-infrastructure] [-d, --details true] [-a, --attached true] [--output FORMAT] [--tag-type TAG_TYPE] [--account-id ACCOUNT_ID]`
